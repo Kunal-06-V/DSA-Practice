@@ -1,6 +1,6 @@
-// import java.util.*;
+import java.util.*;
 
-// public class halfPyramidPattern {
+// public class ifElse {
 //     public static void main(String args[]){
 //         int a = 4;
 //         int b = 3;
@@ -12,7 +12,7 @@
 //     }
 // }
 
-// public class halfPyramidPattern {
+// public class ifElse {
 //     public static void main (String args[]){
 //         Scanner sc = new Scanner(System.in);
 //         int num = sc.nextInt();
@@ -25,7 +25,7 @@
 // }
 
 
-// public class halfPyramidPattern {
+// public class ifElse {
 //     public static void main (String args[]){
 //         Scanner sc = new Scanner(System.in);
 //         int income = sc.nextInt();
@@ -40,7 +40,7 @@
 //     }
 // }
 
-// public class halfPyramidPattern {
+// public class ifElse {
 //     public static void main (String args[]){
 //         int a = 1;
 //         int b = 3;
@@ -51,7 +51,7 @@
 //     }
 // }
 
-// public class halfPyramidPattern {
+// public class ifElse {
 //     public static void main (String args[]){
 //         int marks = 4;
 
@@ -59,3 +59,54 @@
 //         System.out.println(type);
 //     }
 // }
+
+// Practice Set : START 
+
+// Q1 : Write a Java program to get a number from 
+// the user and print whether it is positive or negative.
+
+// public class ifElse {
+//     public static void main(String args[]){
+//         Scanner sc = new Scanner(System.in);
+//         int num = sc.nextInt();
+
+//         if(num > 0){
+//             System.out.println("Num is Positive");
+//         }else if(num < 0){
+//             System.out.println("Num is negative");
+//         }else{
+//             System.out.println("Num is Zero");
+//         }
+//     }
+// }
+
+// Q2 :Finish the following code so that it prints You have a fever 
+// if your temperature is above 100 and otherwise
+//  prints You don't have a fever.
+
+// public class ifElse{
+//     public static void main (String args[]){
+//         double temp = 103.5;
+
+//         if(temp > 100){
+//             System.out.println("You have fever");
+//         }else {
+//             System.out.println("You not have fever");
+//         }
+//     }
+// }
+
+// Q3 : Write a Java program that takes a year from the user and print 
+// whether that year is a leap year or not.
+
+public class ifElse {
+    public static void main(String args[]){
+         Scanner sc =new Scanner(System.in);
+        int year = sc.nextInt();
+        if(year % 4 == 0 &&( year % 100 != 0 || year % 400 == 0) ){
+             System.out.println("The year "+year+" is leap year");
+        }else{
+             System.out.println("The year "+year+" is not leap year");
+        }
+    }
+}

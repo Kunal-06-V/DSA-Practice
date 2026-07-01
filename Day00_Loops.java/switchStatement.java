@@ -1,7 +1,7 @@
 // import java.util.*;
 
 
-// public class halfPyramidPattern {
+// public class switchStatement {
 //     public static void main (String args[]) {
 //         char ch = 'a';
 //        int number = 2;
@@ -17,7 +17,7 @@
 //     }
 // }
 
-// public class halfPyramidPattern {
+// public class switchStatement {
 //     public static void main(String args[]){
 //         Scanner sc = new Scanner(System.in);
 //         System.out.println("Enter the Num a : ");
