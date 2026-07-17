@@ -80,19 +80,38 @@ public class funJavaBasics {
 
  // //  function overloading using datatypes 
 
-  public static int sum(int a, int b){
-    return a + b;
- }
+//   public static int sum(int a, int b){
+//     return a + b;
+//  }
 
- // func to calc sum of 3 nums 
- public  static float sum(float a , float b ){
-    return a + b ;
- }
+//  // func to calc sum of 2 float nums 
+//  public  static float sum(float a , float b ){
+//     return a + b ;
+//  }
 
- public static  void main(String args[]){
-     System.out.println(sum(3 , 5));
-     System.out.println(sum(3.5f , 4.5f));
+//  public static  void main(String args[]){
+//      System.out.println(sum(3 , 5));
+//      System.out.println(sum(3.5f , 4.5f));
 
- }
+//  }
+
+// public static boolean isPrime(int n){
+
+//      for(int i = 2 ; i <= n -1 ;i++){
+//         if( n % i == 0){
+//            return false;
+          
+//         }
+//      }
+//      return  true;
+// }
+
+// public static void main(String args[]){
+//      Scanner sc = new Scanner(System.in);
+//     System.out.println("Enter the Number :");
+//     int n = sc.nextInt();
+//     System.out.println(isPrime(n));
+//     // System.out.println(isPrime(5));
+// }
 
 }
