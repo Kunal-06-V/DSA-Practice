@@ -114,4 +114,6 @@ public class funJavaBasics {
 //     // System.out.println(isPrime(5));
 // }
 
+
+
 }
