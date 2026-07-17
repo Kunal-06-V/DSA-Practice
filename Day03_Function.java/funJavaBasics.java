@@ -114,6 +114,50 @@ public class funJavaBasics {
 //     // System.out.println(isPrime(5));
 // }
 
+//   // Convert From Binary To Decimal 
+
+// public static void binToDec(int binNum) {
+//     int  myNum = binNum;
+//     int pow = 0;
+//     int decNum = 0;
+//     while(binNum > 0 ){
+//         int lastDigit = binNum % 10;
+//         decNum = decNum + (lastDigit * (int)Math.pow(2, pow));
+
+//         pow++;
+//         binNum = binNum / 10;
+//     }
+//     System.out.println("Decimal of "+ myNum + " = " + decNum );
+// }
+
+// public static void main(String args[]){
+//    binToDec(110111101);
+// }
+
+//   // Convert From Decimal  To Binary 
 
 
+// public static void decToBin(int decNum){
+//     int myNum = decNum;
+//     int binNum = 0;
+//     int pow = 0;
+
+//     while(decNum > 0){
+//      int rem = decNum % 2;
+//      binNum = binNum + (rem * (int)Math.pow(10 , pow));
+
+//      pow++;
+//      decNum  = decNum/2;
+//     }
+//     System.out.println("Binary  of " + myNum+ " = "+ binNum);
+// }
+
+// public static void main(String args[]){
+//    decToBin(7);
+// }
+
+
+public static void main(String args[]){
+    
+}
 }
