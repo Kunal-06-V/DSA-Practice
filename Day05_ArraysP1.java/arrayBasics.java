@@ -106,31 +106,129 @@ public class arrayBasics {
 // System.out.println();
 // }
 
-public static int binSer(int numbers[], int key){
-    int start = 0 ; 
-    int end = numbers.length-1;
+// public static int binSer(int numbers[], int key){
+//     int start = 0 ; 
+//     int end = numbers.length-1;
 
-    while(start <= end){
-       int mid = (start + end) / 2;
+//     while(start <= end){
+//        int mid = (start + end) / 2;
 
-       if(numbers[mid] == key){
-         return mid;
-       }
-       if(numbers[mid] < key){
-         start= mid + 1
+//        if(numbers[mid] == key){
+//          return mid;
+//        }
+//        if(numbers[mid] < key){
+//          start= mid + 1
        
-       }else{
-        end = mid - 1;
-       }
-    }
-    return -1;
-}
+//        }else{
+//         end = mid - 1;
+//        }
+//     }
+//     return -1;
+// }
 
-public static void main(String args[]){
-    int numbers[] = {2, 4, 6, 8, 10, 12, 14};
-    int key = 10;
+// public static void main(String args[]){
+//     int numbers[] = {2, 4, 6, 8, 10, 12, 14};
+//     int key = 10;
 
-    binSer(numbers,key);
+//     binSer(numbers,key);
     
+    // ? Practice set revision 
+
+// public static int linSe(int numbers[] , int key){
+//   for(int i = 0; i < numbers.length;i++){
+//     if(numbers[i] == key){
+//       return i;
+//     }
+//   }
+//   return -1;
+// }
+// public static void main (String args[]){
+//   int numbers [] = {2, 4, 6, 8, 10};
+//   int key = 10;
+
+//   int index = linSe( numbers, key);
+
+//   if(index == -1){
+//     System.out.println("Not found");
+//   }else{
+//     System.out.println("The is found at index: "+index);
+//   }
+// }
+
+// public static int largestN(int numbers[]){
+//   int largestNUM = Integer.MIN_VALUE;
+//   int smallest = Integer.MAX_VALUE;
+
+//   for(int i = 0; i < numbers.length;i++){
+//     if(numbers[i] > largestNUM){
+//       largestNUM = numbers[i];
+//     }
+//   }
+//   for(int i = 0; i< numbers.length;i++){
+//     if(numbers[i] < smallest)
+//     smallest = numbers[i];
+//   }
+//     System.out.println(smallest);
+
+//   return largestNUM;
+// }
+// public static void main(String args[]){
+//   int numbers [] = {1, 2, 6, 3, 5};
+  
+//   System.out.println("Largest Num: "+ largestN(numbers));
+  
+// }
+
+// public static int binSer(int numbers[], int key){
+//   int start = 0; 
+//   int end = numbers.length -1;
+
+//   while(start <= end){
+//     int mid = (start + end) / 2;
+    
+//     if(numbers[mid] == key){
+//       return mid;
+//     }
+//     if(numbers[mid] < key){
+//       start = mid + 1;
+//     }else {
+//       end = mid - 1;
+//     }
+//   }
+//   return -1;
+// }
+
+// public static void main (String args[]){
+//   int numbers[] ={2, 4, 6, 8, 10, 12, 14};
+//   int key = 10;
+
+//   int findN = binSer(numbers , key);
+//   System.out.println(findN);
+// }
+
+// public static void ReverseNum(int numbers[]){
+//   int first = 0;
+//   int last = numbers.length-1;
+
+//   while(first <= last){
+//     int temp = numbers[last];
+//     numbers[last] = numbers[first];
+//     numbers[first] = temp;
+//     first++;
+//     last--;
+//   }
+
+// }
+
+// public static void main (String args[]){
+//   int numbers[] = {2, 4, 6, 8, 10};
+//    ReverseNum(numbers);
+//    for(int i = 0; i< numbers.length;i++){
+//     System.out.print(numbers[i] + " ");
+//    }
+//    System.out.println();
+// }
+
 
 }
+
