@@ -1,4 +1,5 @@
 //  TODO : Contains Duplicate - 217 LEETCODE
+//! Method : 1 Burte force Approach 
 
 import java.util.*;
 
@@ -17,4 +18,8 @@ public class containsDuplicate{
         int nums []={ 1,1,1,3,3,4,3,2,4,2};
          System.out.println(containDupli(nums));
     }
+
+    //! We will do the 
+    //! hashSet Method later in hashset part 
+    //! And contine it 
 }
