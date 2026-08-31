@@ -1,19 +1,35 @@
 import java.util.*;
 
+// public static int buyAndSell(int prices[]){
+//     int buyPrice = Integer.MAX_VALUE;
+//     int maxProfit = 0;
+//     for(int i = 0; i < prices.length;i++){
+//         if(buyPrice < prices[i]){ // * profit 
+//             int profit = prices[i]-buyPrice; //* today's profit 
+//             maxProfit = Math.max(maxProfit, profit); //? Global profit 
+//         }else {
+//             buyPrice = prices[i];
+//         }
+//     }
+//     return maxProfit;
+// }
+ 
+// ! Revision set 2 
+
 public static int buyAndSell(int prices[]){
     int buyPrice = Integer.MAX_VALUE;
     int maxProfit = 0;
     for(int i = 0; i < prices.length;i++){
-        if(buyPrice < prices[i]){ // * profit 
-            int profit = prices[i]-buyPrice; //* today's profit 
-            maxProfit = Math.max(maxProfit, profit); //? Global profit 
-        }else {
+        if(buyPrice < prices[i]){
+            int profit = prices[i] - buyPrice;
+            maxProfit = Math.max(profit ,maxProfit);
+        }else{
             buyPrice = prices[i];
         }
     }
     return maxProfit;
+   
 }
-
 public static void main(String args[]){
     int prices[] = {7, 1, 5, 3, 6, 4};
     System.out.println(buyAndSell(prices));
