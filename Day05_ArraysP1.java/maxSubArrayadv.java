@@ -34,20 +34,35 @@ public class maxSubArrayadv{
     //! What IF all variable are all negative 
 
     
-    public static void kadanesAlg(int numbers[]){
-       int cs = 0;
-       int ms = Integer.MIN_VALUE;
-       for(int i =0; i< numbers.length;i++){
-         cs +=numbers[i];
+    // public static void kadanesAlg(int numbers[]){
+    //    int cs = 0;
+    //    int ms = Integer.MIN_VALUE;
+    //    for(int i =0; i< numbers.length;i++){
+    //      cs +=numbers[i];
         
-         ms = Math.max(cs , ms); 
-         if(cs < 0){
-            cs = 0;
-         }
-       }
-       System.out.println("Maximum Sum is: "+ms);
-    }
+    //      ms = Math.max(cs , ms); 
+    //      if(cs < 0){
+    //         cs = 0;
+    //      }
+    //    }
+    //    System.out.println("Maximum Sum is: "+ms);
+    // }
 
+
+// ! revision set 2 
+
+        public static void kadanesAlg(int numbers[]){
+          int cs = 0;
+          int ms = Integer.MIN_VALUE;
+          for(int i = 0; i < numbers.length;i++){
+            cs += numbers[i];
+            ms = Math.max(cs ,ms);
+            if(cs < 0){
+              cs = 0;
+            }
+          }
+          System.out.println(ms);
+        }
     public static void main(String args[]){
       int numbers [] ={ -2, -3, -4, 1, -2, 1, -5, -3};
       kadanesAlg(numbers);
