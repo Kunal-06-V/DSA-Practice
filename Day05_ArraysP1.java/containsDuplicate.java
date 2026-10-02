@@ -4,21 +4,39 @@
 import java.util.*;
 
 public class containsDuplicate{
-    public static boolean containDupli(int nums []){
-        for(int i = 0; i< nums.length; i++){
-            for(int j = i + 1; j < nums.length;j++){
-                if(nums[i] == nums[j]){
-                    return true;
-                }
+//     public static boolean containDupli(int nums []){
+//         for(int i = 0; i< nums.length; i++){
+//             for(int j = i + 1; j < nums.length;j++){
+//                 if(nums[i] == nums[j]){
+//                     return true;
+//                 }
+//             }
+//         }
+//         return false;
+//     }
+//     public static void main(String args[]){
+//         int nums []={ 1,1,1,3,3,4,3,2,4,2};
+//          System.out.println(containDupli(nums));
+//     }
+   // ? Revision set 2 
+
+   
+
+   public static boolean containDupli(int nums[]){
+    for(int i = 0; i < nums.length-1;i++){
+        for(int j = i + 1; j < nums.length-1;j++){
+            if(nums[i] == nums[j]){
+                return true;
             }
         }
-        return false;
     }
+    return false;
+   }
+
     public static void main(String args[]){
         int nums []={ 1,1,1,3,3,4,3,2,4,2};
-         System.out.println(containDupli(nums));
+         System.out.println(containDupli(nums)); // * if duplicate nums are there then return true;
     }
-
     //! We will do the 
     //! hashSet Method later in hashset part 
     //! And contine it 

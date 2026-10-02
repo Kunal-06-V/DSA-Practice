@@ -18,10 +18,27 @@ public class MaxConsecutiveOnes{
 
     // ! Revision Set 2 : 
 
+    // public static int MaxConsecutive(int numbers[]){
+    //     int c = 0;
+    //     int m = 0; 
+    //     for(int i = 0; i < numbers.length;i++){
+    //         if(numbers[i] == 1){
+    //             c += 1;
+    //         }else{
+    //             c = 0;
+    //         }
+    //         m = Math.max(c , m);
+    //     }
+    //     return m;
+    // }
+
+
+   //! Revision Set 3 : 
+
     public static int MaxConsecutive(int numbers[]){
         int c = 0;
-        int m = 0; 
-        for(int i = 0; i < numbers.length;i++){
+        int m = 0;
+        for(int i = 0; i < numbers.length-1;i++){
             if(numbers[i] == 1){
                 c += 1;
             }else{
@@ -29,8 +46,10 @@ public class MaxConsecutiveOnes{
             }
             m = Math.max(c , m);
         }
-        return m;
+        return m ;
     }
+
+
     public static void main(String args[]){
         int numbers[] ={1, 1, 0, -1, 1, 1, 1, 0, 1};
         

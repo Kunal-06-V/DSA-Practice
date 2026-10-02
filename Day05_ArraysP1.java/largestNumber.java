@@ -14,12 +14,23 @@ public class largestNumber {
    
    // ! Revision Two 
 
+    // public static int getLargest(int numbers[]){
+    //     int max= Integer.MIN_VALUE;
+    //     for(int i = 0; i<numbers.length;i++){
+    //         if(numbers[i] > max){
+    //             max = numbers[i];
+    //         }
+    //     }
+    //     return max;
+    // }
+
+    // ! Revision Three 
     public static int getLargest(int numbers[]){
-        int max= Integer.MIN_VALUE;
-        for(int i = 0; i<numbers.length;i++){
-            if(numbers[i] > max){
-                max = numbers[i];
-            }
+        int max = Integer.MIN_VALUE;
+        for(int i = 0; i < numbers.length-1;i++){
+           if(numbers[i] > max){
+            max = numbers[i];
+           }
         }
         return max;
     }

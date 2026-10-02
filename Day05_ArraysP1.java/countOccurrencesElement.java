@@ -11,16 +11,25 @@ public class countOccurrencesElement{
     //     return count;
     // }
 
-    public static int countOccurrences(int numbers[], int key){
+    // public static int countOccurrences(int numbers[], int key){
+    //     int count = 0;
+    //     for(int i = 0; i < numbers.length;i++){
+    //         if(numbers[i] == key){
+    //             count++;
+    //         }
+    //     }
+    //     return count;
+    // }
+    
+    public static int countOccurrences(int numbers[] , int key){
         int count = 0;
-        for(int i = 0; i < numbers.length;i++){
+        for(int i = 0;i < numbers.length-1;i++){
             if(numbers[i] == key){
                 count++;
             }
         }
         return count;
     }
-
 
    public static void main(String args[]){
     int numbers[] = {2, 3, 4, 5, 2, 7, 5, 2, 0, 2};

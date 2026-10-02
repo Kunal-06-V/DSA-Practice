@@ -1,6 +1,13 @@
 import java.util.*;
 
 public class arrayBasics {
+    // public static void main(String args[]){
+     
+    //   for(int i = 0; i <= 4; i++){
+    //     System.out.println("* * * *");
+    //   }
+
+    // }
 //     public static void update(int marks[]){
 //         for(int i = 0; i<marks.length;i++){
 //             marks[i]= marks[i]+ 1;

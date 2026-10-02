@@ -4,23 +4,34 @@ public class pairsArray{
 
     //  !  if j = i +1
 
-    public static void printPairs(int numbers[]){
-        int tp = 0; // for total paris
+//     public static void printPairs(int numbers[]){
+//         int tp = 0; // for total paris
+//         for(int i = 0; i < numbers.length;i++){
+// //            * current Element 
+//             int curr = numbers[i];
+//             for(int j = i+1; j < numbers.length;j++){
+//                  System.out.print("(" + curr + ","+numbers[j]+")");
+//                  tp++;
+//             }
+//             System.out.println();
+//         }
+//         System.out.println("Total pairs are :" + tp);
+//         //* (2,4)(2,6)(2,8)(2,10)
+//         //* (4,6)(4,8)(4,10)
+//         //* (6,8)(6,10)
+//         // *(8,10)  if  i + 1;
+//     } 
+
+      //! Revision set 2 
+     public static void printPairs(int numbers[]){
         for(int i = 0; i < numbers.length;i++){
-//            * current Element 
             int curr = numbers[i];
             for(int j = i+1; j < numbers.length;j++){
-                 System.out.print("(" + curr + ","+numbers[j]+")");
-                 tp++;
+                System.out.print("("+curr+","+numbers[j]+")");
             }
             System.out.println();
         }
-        System.out.println("Total pairs are :" + tp);
-        // (2,4)(2,6)(2,8)(2,10)
-        // (4,6)(4,8)(4,10)
-        // (6,8)(6,10)
-        // (8,10)  if  i + 1;
-    } 
+     }
 
     public static void main(String args[]){
         int numbers[] = {2, 4, 6, 8, 10};
