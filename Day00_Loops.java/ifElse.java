@@ -38,6 +38,21 @@ import java.util.*;
 //         }
 //             System.out.println("tax is : " + tax);
 //     }
+// ? practice set 2 
+
+//   public static void main(String args[]){
+//      Scanner sc = new Scanner(System.in);
+//      int income = sc.nextInt();
+//      int tax = 0;
+//      if(income <= 500000){
+//      }else if(income > 500000 && income <= 1000000){
+//         tax = (int)(income * (0.2));
+//      }else {
+//         tax = (int)(income * (0.3));
+//      }
+//          System.out.println("tax is :" +tax);
+//      }
+  
 // }
 
 // public class ifElse {
@@ -99,14 +114,14 @@ import java.util.*;
 // Q3 : Write a Java program that takes a year from the user and print 
 // whether that year is a leap year or not.
 
-public class ifElse {
-    public static void main(String args[]){
-         Scanner sc =new Scanner(System.in);
-        int year = sc.nextInt();
-        if(year % 4 == 0 &&( year % 100 != 0 || year % 400 == 0) ){
-             System.out.println("The year "+year+" is leap year");
-        }else{
-             System.out.println("The year "+year+" is not leap year");
-        }
-    }
-}
+// public class ifElse {
+//     public static void main(String args[]){
+//          Scanner sc =new Scanner(System.in);
+//         int year = sc.nextInt();
+//         if(year % 4 == 0 &&( year % 100 != 0 || year % 400 == 0) ){
+//              System.out.println("The year "+year+" is leap year");
+//         }else{
+//              System.out.println("The year "+year+" is not leap year");
+//         }
+//     }
+// }

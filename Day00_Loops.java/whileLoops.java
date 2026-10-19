@@ -9,6 +9,29 @@ import java.util.*;
     //     }
     // }
 
+// ? practice set 2 
+//    public static void main(String args[]){
+//     int count = 1;
+//     while(count <= 10){
+//         System.out.println(count+" ");
+//         count++;
+//     }
+//    }
+
+
+// public static void main(String args[]){
+//     Scanner sc = new Scanner(System.in);
+//     int n = sc.nextInt();
+//   int sum = 0;
+//   int i = 1;
+//   while(i <= n ){
+//     sum = sum + i;
+//     i++;
+//   }
+//   System.out.println(sum);
+// }
+
+//? Practice set 2 
 //    public static void main (String args[]){
 //    Scanner sc = new Scanner(System.in);
 //    int n = sc.nextInt();
@@ -32,11 +55,18 @@ import java.util.*;
 //     }
 //     System.out.println(rev);
 //    }
-
+  
+ //? Practice set 2  
 //    public static void main(String args[]){
-
+//     int rev = 0;
+//     int num = 37653;
+//     while(num > 0){
+//         int lastDigit = num % 10;
+//         rev = rev * 10 + lastDigit;
+//         num /= 10;
+//     }
+//     System.out.println(rev);
 //    }
-
 // }
 
 

@@ -34,6 +34,12 @@ public class primeNumber {
           }
           return true;
      }
+     public static boolean isPrime(int n){
+        if(n == 2){
+            return true;
+        }
+        for()
+     }
      public static void main(String args[]){
         System.out.println(isPrime(13));
      }
