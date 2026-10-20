@@ -25,15 +25,41 @@ public class largestNumber {
     // }
 
     // ! Revision Three 
-    public static int getLargest(int numbers[]){
-        int max = Integer.MIN_VALUE;
-        for(int i = 0; i < numbers.length-1;i++){
-           if(numbers[i] > max){
+    // public static int getLargest(int numbers[]){
+    //     int max = Integer.MIN_VALUE;
+    //     for(int i = 0; i < numbers.length-1;i++){
+    //        if(numbers[i] > max){
+    //         max = numbers[i];
+    //        }
+    //     }
+    //     return max;
+    // }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// ? Revsision set 3 
+
+   public static int getLargest(int numbers[]){
+      int max = Integer.MIN_VALUE;
+      for(int i = 1; i < numbers.length-1; i++){
+        if(numbers[i] > max){
             max = numbers[i];
-           }
         }
-        return max;
-    }
+      }
+      return max;
+   }
+
     public static void main(String args[]){
         int numbers[] = {1, 2, 3, 6, 4, 5};
 
