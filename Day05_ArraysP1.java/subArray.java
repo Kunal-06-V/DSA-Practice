@@ -37,21 +37,40 @@ import java.util.*;
 
     // ! Revision set 3
 public class subArray{
+//     public static void subArr(int numbers[]){
+//         int totalSubArr = 0;
+//         for(int i = 0;i < numbers.length;i++){
+//             int first = i;
+//             for(int j = i; j < numbers.length;j++){
+//                 int last = j;
+//                 for(int k = first; k <= last; k++){
+//                     System.out.print(numbers[k]+" ");
+//                 }
+//                 totalSubArr++;
+//                 System.out.println();
+//             }
+//                 System.out.println();
+//         }
+//         System.out.println("Total SubArray :"+totalSubArr);
+//     }
+
+
     public static void subArr(int numbers[]){
         int totalSubArr = 0;
-        for(int i = 0;i < numbers.length;i++){
-            int first = i;
-            for(int j = i; j < numbers.length;j++){
-                int last = j;
-                for(int k = first; k <= last; k++){
-                    System.out.print(numbers[k]+" ");
+
+        for(int i = 0; i < numbers.length;i++){
+            int first = numbers[i];
+            for(int j = 0; j < numbers.length;j++){
+                int last = numbers[j];
+                for(int k = first; k <= last;k++){
+                    System.out.println(k+" ");
                 }
                 totalSubArr++;
                 System.out.println();
             }
                 System.out.println();
         }
-        System.out.println("Total SubArray :"+totalSubArr);
+                System.out.println("Total subArr :"+totalSubArr);
     }
     public static void main(String args[]){
         int numbers[] = {2, 4, 6, 8, 10};

@@ -13,15 +13,28 @@ public class smallestNumber {
 
 
     //! revision set 1 
-    public static int getSmallest(int numbers[]){
-        int min = Integer.MAX_VALUE;
-        for(int i = 0; i < numbers.length;i++){
-            if(numbers[i] < min){
-                min = numbers[i];
-            }
+    // public static int getSmallest(int numbers[]){
+    //     int min = Integer.MAX_VALUE;
+    //     for(int i = 0; i < numbers.length;i++){
+    //         if(numbers[i] < min){
+    //             min = numbers[i];
+    //         }
+    //     }
+    //     return min;
+    // }
+    
+
+
+   public static int getSmallest(int numbers[]){
+    int min = Integer.MAX_VALUE;
+
+    for(int i = 0; i < numbers.length;i++){
+        if(min > numbers[i]){
+            min = numbers[i];
         }
-        return min;
     }
+return min;
+   }
 
     public static void main(String args[]){
         int numbers[] = {1, 2, 3, 6, 4, 5};

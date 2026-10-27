@@ -28,13 +28,23 @@ public class arraySorted{
     // }
 
 
+    // public static boolean isSorted(int numbers[]){
+    //     for(int i = 0; i < numbers.length-1;i++){
+    //         if(numbers[i] > numbers[i+1]){
+    //             return false;
+    //         }
+    //     }
+    //     return true;
+    // }
+
+
     public static boolean isSorted(int numbers[]){
-        for(int i = 0; i < numbers.length-1;i++){
-            if(numbers[i] > numbers[i+1]){
-                return false;
+        for(int i = 0 ; i < numbers.length;i++){
+            if(numbers[i] < numbers[i+1]){
+                return true;
             }
         }
-        return true;
+        return false;
     }
     public static void main(String args[]){
         int numbers[] ={1, 2, 3, 4, 5} ;

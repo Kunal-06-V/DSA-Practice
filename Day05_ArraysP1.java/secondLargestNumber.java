@@ -23,19 +23,36 @@ public class secondLargestNumber {  // TODO: time O(n) and Space : O(1);
 
      //! revision Set 1 
 
-    public static int  secLargestNums(int numbers[]){
-        int max = Integer.MIN_VALUE;
-        int secMax = Integer.MIN_VALUE;
-        for(int i = 0; i < numbers.length;i++){
-            if(numbers[i] > max){
-                secMax = max;
-                max = numbers[i];
-            }else if(max != numbers[i] && numbers[i] > secMax){
-                secMax = numbers[i];
-            }
+    // public static int  secLargestNums(int numbers[]){
+    //     int max = Integer.MIN_VALUE;
+    //     int secMax = Integer.MIN_VALUE;
+    //     for(int i = 0; i < numbers.length;i++){
+    //         if(numbers[i] > max){
+    //             secMax = max;
+    //             max = numbers[i];
+    //         }else if(max != numbers[i] && numbers[i] > secMax){
+    //             secMax = numbers[i];
+    //         }
+    //     }
+    //     return secMax;
+    // }
+
+
+   public static int secLargestNums(int numbers[]){
+    int max = Integer.MIN_VALUE;
+    int secMax = Integer.MIN_VALUE;
+    for(int i = 0;i < numbers.length;i++){
+        if(numbers[i] > max){
+            secMax = max;
+            max = numbers[i];
+        }else if(max != numbers[i]&&numbers[i] > secMax){
+            secMax = numbers[i];
         }
-        return secMax;
     }
+    System.out.println("The second Maximum Number: "+secMax);
+    return max;
+   }
+
     public static void main(String args[]){
         int numbers[] ={10, 5, 8, 20, 15}; //* o/p = 15
         // int numbers[] ={-10, -5, -20}; //* o/p = -10

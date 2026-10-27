@@ -11,6 +11,8 @@ public class countOccurrencesElement{
     //     return count;
     // }
 
+    // ! Revision set 1
+
     // public static int countOccurrences(int numbers[], int key){
     //     int count = 0;
     //     for(int i = 0; i < numbers.length;i++){
@@ -21,16 +23,29 @@ public class countOccurrencesElement{
     //     return count;
     // }
     
-    public static int countOccurrences(int numbers[] , int key){
-        int count = 0;
-        for(int i = 0;i < numbers.length-1;i++){
-            if(numbers[i] == key){
-                count++;
-            }
-        }
-        return count;
-    }
+    // ! Revision set 2
 
+    // public static int countOccurrences(int numbers[] , int key){
+    //     int count = 0;
+    //     for(int i = 0;i < numbers.length-1;i++){
+    //         if(numbers[i] == key){
+    //             count++;
+    //         }
+    //     }
+    //     return count;
+    // }
+
+    // ! Revision set 3 
+
+   public static int countOccurrences(int numbers[], int key){
+    int count = 0;
+    for(int i = 0; i < numbers.length;i++){
+        if(numbers[i]== key){
+            count++;
+        }
+    }
+    return count;
+   }
    public static void main(String args[]){
     int numbers[] = {2, 3, 4, 5, 2, 7, 5, 2, 0, 2};
     int key = 2;

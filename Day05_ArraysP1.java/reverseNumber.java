@@ -24,6 +24,30 @@ public class reverseNumber {
 //         System.out.println();
 //     } 
 
+
+public static void reverseNumber(int numbers[]){
+   int first = 0;
+   int last = numbers.length-1;
+   while(first < last){
+    // Swap 
+    int temp = numbers[first];
+    numbers[first] = numbers[last];
+    numbers[last]= temp;
+    first++;
+    last--;
+   }
+   
+}
+public static void main(String args[]){
+  int numbers[]={2, 4, 6, 8, 10};
+  reverseNumber(numbers);
+
+  for(int i = 0; i <numbers.length;i++){
+    System.out.println(numbers[i]+" ");
+  }
+System.out.println();
+}
+
 // ? Method two if number are in not array -- 
 //* int == 32 bit max positive value => 2147483647 
 // * max negative value => -2147483648  the output should bettween them 
@@ -65,24 +89,40 @@ public class reverseNumber {
 
    //! Revision Set 3 
 
-   public static int reverse(int numbers){
-       int rev = 0;
-       while(numbers > 0){
-        int lastDigit = numbers % 10;
-        rev = rev * 10 + lastDigit;
-        if(rev > Integer.MAX_VALUE || rev == Integer.MAX_VALUE && lastDigit > 7){
-          return -1;
-        }
-        if(rev < Integer.MIN_VALUE || rev == Integer.MIN_VALUE && lastDigit < 8){
-          return -1;
-        }
-        numbers /= 10;
-       }
-       return rev;
-   }
+  //  public static int reverse(int numbers){
+  //      int rev = 0;
+  //      while(numbers > 0){
+  //       int lastDigit = numbers % 10;
+  //       rev = rev * 10 + lastDigit;
+  //       if(rev > Integer.MAX_VALUE || rev == Integer.MAX_VALUE && lastDigit > 7){
+  //         return -1;
+  //       }
+  //       if(rev < Integer.MIN_VALUE || rev == Integer.MIN_VALUE && lastDigit < 8){
+  //         return -1;
+  //       }
+  //       numbers /= 10;
+  //      }
+  //      return rev;
+  //  }
 
-   public static void main(String args[]){
-     int numbers = 12345;
-       System.out.println(reverse(numbers));
-   }
+// ! Pratice set 4 
+  //  public static int reverse(int numbers){
+  //   int rev = 0;
+  //   while(numbers > 0){
+  //     int lastDigit = numbers % 10;
+  //     rev = rev * 10 + lastDigit;
+  //     if(rev > Integer.MAX_VALUE || rev == Integer.MAX_VALUE && lastDigit > 7){
+  //       return -1;
+  //     }
+  //     if(rev < Integer.MIN_VALUE || rev == Integer.MIN_VALUE && lastDigit < 8){
+  //       return -1;
+  //     }
+  //     numbers /= 10;
+  //   }
+  //   return rev;
+  //  }
+  //  public static void main(String args[]){
+  //    int numbers = 12345;
+  //      System.out.println(reverse(numbers));
+  //  }
 }
